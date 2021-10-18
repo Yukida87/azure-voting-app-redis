@@ -40,7 +40,7 @@ pipeline {
       stage('Run Tests') {
          steps {
             pwsh(script: """
-               pytest ./tests/test_sample.py
+               pytest C:/Users/I551939/OneDrive - SAP SE/Documents/learnings/Jenkins/azure-app/azure-voting-app-redis/tests/test_sample.py
             """)
          }
       }
