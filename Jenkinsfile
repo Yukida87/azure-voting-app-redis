@@ -10,8 +10,8 @@ pipeline {
 
         stage('Docker Build') {
             steps {
-                echo "no docker in docker"
-                '''
+                echo 'no docker in docker'
+                /*
                 sh 'docker images -a'
                 sh """
                     cd azure-vote/
@@ -20,7 +20,7 @@ pipeline {
                     docker images -a
                     cd ..
                 """
-                '''
+                */
             }
         }
     }
