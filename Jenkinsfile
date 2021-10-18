@@ -39,9 +39,9 @@ pipeline {
       }
       stage('Run Tests') {
          steps {
-            pwsh(script: """
-               pytest C:/Users/I551939/OneDrive - SAP SE/Documents/learnings/Jenkins/azure-app/azure-voting-app-redis/tests/test_sample.py
-            """)
+            
+            sh 'pytest C:/Users/I551939/OneDrive - SAP SE/Documents/learnings/Jenkins/azure-app/azure-voting-app-redis/tests/test_sample.py'
+            
          }
       }
       stage('Stop test app') {
