@@ -10,6 +10,7 @@ pipeline {
 
         stage('Docker Build') {
             steps {
+                echo "no docker in docker"
                 '''
                 sh 'docker images -a'
                 sh """
